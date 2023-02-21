@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Task from './Task';
+import { AiOutlinePlus } from 'react-icons/ai'
 
 
 function App() {
@@ -41,8 +42,9 @@ function App() {
   return (
     <div className="App">
         <div className="addTask">
+          <h3> Todo List</h3>
           <input value={newTask} onInput={handleChange}  />
-          <button onClick={addTask}>Add Task</button>
+          <button onClick={addTask}><AiOutlinePlus/></button>
         </div>
         {todoList.map((task) => {
           return (
