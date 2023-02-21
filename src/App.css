@@ -33,9 +33,9 @@ input {
 
 button {
   all: unset;
-  margin-left: 10px;;
-  padding: 10px 15px;;
-  border-radius: 5px;;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
   border: 1px solid #f3f3f3;
   cursor: pointer;
 }
@@ -46,7 +46,12 @@ button {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #333;
+  padding-bottom: 30px;
   margin-bottom: 30px;
+}
+
+.tasks:last-child { 
+  border-bottom: none; 
 }
 
 .buttons button {
